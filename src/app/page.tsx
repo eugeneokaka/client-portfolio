@@ -59,6 +59,7 @@ function Navbar() {
 
 // ✅ Hero Section (with randomized but safe image)
 // ✅ Hero Section (fixed aspect ratio image)
+// ✅ Hero Section (fixed aspect ratio image)
 function Hero() {
   const heroImages = ["/one.jpg", "/two.jpg", "/three.jpg"];
   const [heroImage, setHeroImage] = useState(heroImages[0]);
@@ -99,12 +100,18 @@ function Hero() {
           <span className="font-semibold">technology</span>.
         </p>
         <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-          <button className="px-6 py-3 bg-gradient-to-r from-indigo-600 to-sky-500 text-white font-medium rounded-full shadow-lg hover:shadow-indigo-400/40 hover:scale-105 transition flex items-center gap-2">
+          <a
+            href="#projects"
+            className="px-6 py-3 bg-gradient-to-r from-indigo-600 to-sky-500 text-white font-medium rounded-full shadow-lg hover:shadow-indigo-400/40 hover:scale-105 transition flex items-center gap-2"
+          >
             🚀 View My Work
-          </button>
-          <button className="px-6 py-3 bg-white text-indigo-700 border border-indigo-200 font-medium rounded-full shadow-md hover:bg-indigo-50 hover:scale-105 transition flex items-center gap-2">
+          </a>
+          <a
+            href="#contact"
+            className="px-6 py-3 bg-white text-indigo-700 border border-indigo-200 font-medium rounded-full shadow-md hover:bg-indigo-50 hover:scale-105 transition flex items-center gap-2"
+          >
             📬 Contact Me
-          </button>
+          </a>
         </div>
       </div>
 
